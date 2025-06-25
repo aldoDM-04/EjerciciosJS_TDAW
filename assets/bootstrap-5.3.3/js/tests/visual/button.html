@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2920.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Button</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Button <small>Bootstrap Visual Test</small></h1>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
+        Single toggle
+      </button>
+
+      <p>For checkboxes and radio buttons, ensure that keyboard behavior is functioning correctly.</p>
+      <p>Navigate to the checkboxes with the keyboard (generally, using <kbd>Tab</kbd> / <kbd><kbd>Shift</kbd> + <kbd>Tab</kbd></kbd>), and ensure that <kbd>Space</kbd> toggles the currently focused checkbox. Click on one of the checkboxes using the mouse, ensure that focus was correctly set on the actual checkbox, and that <kbd>Space</kbd> toggles the checkbox again.</p>
+
+      <div class="btn-group" data-bs-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 3
+        </label>
+      </div>
+
+      <p>Navigate to the radio button group with the keyboard (generally, using <kbd>Tab</kbd> / <kbd><kbd>Shift</kbd> + <kbd>Tab</kbd></kbd>). If no radio button was initially set to be selected, the first/last radio button should receive focus (depending on whether you navigated "forward" to the group with <kbd>Tab</kbd> or "backwards" using <kbd><kbd>Shift</kbd> + <kbd>Tab</kbd></kbd>). If a radio button was already selected, navigating with the keyboard should set focus to that particular radio button. Only one radio button in a group should receive focus at any given time.  Ensure that the selected radio button can be changed by using the <kbd>←</kbd> and <kbd>→</kbd> arrow keys. Click on one of the radio buttons with the mouse,  ensure that focus was correctly set on the actual radio button, and that <kbd>←</kbd> and <kbd>→</kbd> change the selected radio button again.</p>
+
+      <div class="btn-group" data-bs-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+        </label>
+      </div>
+    </div>
+
+    <script src="../../../dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

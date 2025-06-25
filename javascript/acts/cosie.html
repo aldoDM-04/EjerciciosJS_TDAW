@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2920.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8" />
+    <meta name="viewport" content="width=service-width, initial-scale=1.0"/>
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <div align="center">
+
+            <div>
+                <table width="100%" >
+                    <tr>
+                        <td width="20%" rowspan="3"><img src="https://jrodp.files.wordpress.com/2014/04/logoipn-negro.png" width="150"></td>
+                        <td width="60%" style="text-align: center;">        
+                            <h1>INSTITUTO POLITECNICO NACIONAL</h1>
+                            <p><font size="+2" >SECRETARIA ACADEMICA </font></p>
+                            <h3> COMISION DE SITUACION ESCOLAR </h3>
+                            <h3> DEL. CONSEJO GENERAL CONSULTIVA </h3>
+                        </td>
+                        <td width="20%"></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p align="right">Formato de Solicitud (COSIE-01)&nbsp;&nbsp;</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p align="right"><strong>Ciudad de México a__ de ____ de 201__</strong> </p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p align="center">Favor de llenar el formulario con letra legible</p>
+                        </td>
+                        
+                    </tr>
+                </table>
+        
+            </div>
+        
+            <div >
+                <table border="1">
+                    <tr>
+                        <th colspan="7" bgcolor="gray"><h4>DATOS PERSONALES DEL SOLICITANTE</h4></th>
+                    </tr>
+                    
+                    <tr>
+                        <td >APELLIDOS: </td>
+                        <td colspan="3"><input type="text" size="75"/></td>
+                        <td>Nombre(s)</td>
+                        <td colspan="2"><input type="text" size="50"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>No. de BOLETA:</strong></td>
+                        <td colspan="1"><input type="number"></td>
+                        <td><strong>UNIDAD ACADEMICA:</strong></td>
+                        <td><input type="text"></td>
+                        <td><strong>PROGRAMA ACADEMICO:</strong></td>
+                        <td colspan="2"><input type="text" size="50"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>FECHA DE NACIMIENTO:</td>
+                        <td colspan="3"><input type="text" size="75"></td>
+                        <td>ESTADO CIVIL:</td>
+                        <td colspan="2"><input type="text" size="50"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>DOMICILIO PARTICULAR</td>
+                        <td colspan="6"><input type="text" size="160"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="8" bgcolor="gray"><h4>INFORMACION SOLICITADA CON MOTIVOS ESTADISTICOS</h4></th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="5">TIENES DEPENDIENTES ECONOMICOS(Conyuge):</td>
+                        <td>SI <input type="checkbox"></td>
+                        <td>NO <input type="checkbox"></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td colspan="5">TIENES DEPENDIENTES ECONOMICOS MENORES DE EDAD (Hijos o Hijas):</td>
+                        <td>SI <input type="checkbox"></td>
+                        <td>NO <input type="checkbox"></td>
+        
+                    </tr>
+                    <tr>
+                        <td>TUVO EMBARAZO: </td>
+                        <td>PROPIO</td>
+                        <td><input type="checkbox"></td>
+                        <td>O DE LA PAREJA</td>
+                        <td><input type="checkbox"></td>
+                        <td>NO DESEO CONTESTAR:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>TELEFONO CELULAR:</td>
+                        <td colspan="2"><input type="tel" size="47"></td>
+                        <td>CORREO ELECTRONICO</td>
+                        <td colspan="3"><input type="email" size="80"></td>
+                    </tr>
+                    <tr>
+                        <td>FECHA DE INGRESO (Periodo escolar en que ingreso al Nivel Educativo Actual):</td>
+                        <td colspan="6"><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>ULTIMO SEMESTRE/NIVEL EN QUE ESTUVO INSCRITO:</td>
+                        <td colspan="6"><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>FECHA DEL ULTIMO DICTAMEN DE SITUACION ESCOLAR:</td>
+                        <td colspan="2"><input type="text" size="47"></td>
+                        <td>COSIE del CTCE</td>
+                        <td><input type="text"></td>
+                        <td>COSIE del CGC</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <BR>
+        
+            <div>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <table>
+                    
+                                <th colspan="3"><br> SITUACION ESCOLAR ACTUAL</th>
+                                <tr height="40">
+                                    <td colspan="2" >1. ADEUDOS DE UNIDADES DE APRENDIZAJE DESFASADAS (Art. 98 RI y 52 RGE):</td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                                <tr height="40">
+                                    <td colspan="2">2. NO HABER SOLICITADO REINSCRIPCION EN EL PERIODO ESCOLAR ANTERIOR (Art. 57 RGE):</td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                                <tr height="40">
+                                    <td colspan="2">3. RECONOCIMIENTO DE CALIFICACIONES ACREDITADAS:</td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                                <tr height="40">
+                                    <td colspan="2">4. AMPLIACION DE TIEMPO PARA LA CONCLUSION DE ESTUDIOS (Art. 49 RGE):</td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                                <tr height="40">
+                                    <td colspan="2">5. INCUMPLIMIENTO DE DICTAMEN DE SITUACION ESCOLAR ANTERIOR:</td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                                <tr height="40">
+                                    <td>6. OTRAS (ESPECIFIQUE):</td>
+                                    <td><p>______________________________________</p></td>
+                                    <td><input type="checkbox"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <br>
+        
+            <div>
+                <table width="100%" border="1">
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td colspan="6" align="center"><h4>EXPLIQUE DE FORMA CONCRETA SU PETICION</h4></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="6" align="center">  ____________________________________________________________________________________________________________________________<br> 
+                                    ____________________________________________________________________________________________________________________________<br> 
+                                    ____________________________________________________________________________________________________________________________<br> 
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="6"><h5>MARQUE CON UNA "X" LA(S) CAUSA(S) QUE ORIGINO QUE SE ENCUENTRE EN SU SITUACION ESCOLAR ACTUAL:</h5></td>
+                                </tr>
+        
+                                <tr>
+                                    <td style="border:groove;">SALUD <input type="checkbox"/></td>
+                                    <td style="border:groove;">ECONOMICA <input type="checkbox"/></td>
+                                    <td style="border:groove;">FAMILIAR <input type="checkbox"/></td>
+                                    <td style="border:groove;">LEGAL <input type="checkbox"/></td>
+                                    <td style="border:groove;">LABORAL <input type="checkbox"/></td>
+                                    <td style="border:groove;">ADMINISTRATIVA <input type="checkbox"/></td>
+                                </tr>
+        
+                                <tr>
+                                    <td align="center"> OTRAS <input type="checkbox"/></td>
+                                    <td colspan="5">CUAL: __________________________________________________</td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="6"><h4>MARQUE LA DOCUMENTACION  QUE ANEXA PARA ANALIZAR SU SITUACION ACADEMICA:</h4></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">BOLETA GLOBAL DE CALIFICACIONES CERTIFICADA</td>
+                                    <td align="right"><input type="checkbox"></td>
+                                    <td colspan="2"  align="right">DOCUMENTOS PROBATORIOS</td>
+                                    <td align="right"><input type="checkbox"></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">CARTA DE EXPOSICION DE MOTIVOS </td>
+                                    <td align="right"><input type="checkbox"></td>
+                                    <td colspan="2"  align="right">OTROS</td>
+                                    <td align="right"><input type="checkbox"></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">DICTAMENES ANTERIORES</td>
+                                    <td align="right"><input type="checkbox"></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">BAJAS ANTERIORES</td>
+                                    <td align="right"><input type="checkbox"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div>
+                <br>
+                <p>AUTORIZO A RECIBIR LAS COMUNICACIONES RELATIVAS A ESTA SOLICITUD EN EL SIGUIENTE CORREO ELECTRONICO:</p><br>
+                <hr width="80%">
+                <br>
+                <br>
+                <br>
+            </div>
+            
+            <div>
+                <table width="70%" border="3">
+                    <tr height="50">
+                        <td width="50%" bgcolor="#B4B4B4">
+                            <p align="center">NOMBRE y FIRMA DEL ALUMNO</p>
+                        </td>
+                        <td width="50%" bgcolor="#B4B4B4">
+                            <p align="center">NOMBRE, FIRMA Y FECHA DE RECEPCIÓN DEL EXPEDIENTE POR LA UNIDAD ACADÉMICA</p>
+                        </td>
+                    </tr>
+                    <tr height="90"><td></td><td></td></tr>
+                </table>
+                <br>
+                
+                <table width="77%">
+                    <tr>
+                        <td>
+                            <p align="justify"><strong>Aviso de Privacidad.</strong> Los datos contenidos en esta solicitud están en posesión de la Comisión de Situación Escolar del Consejo General Consultivo del Instituto Politécnico Nacional,
+                                tendrán el carácter de información confidencial en términos de lo dispuesto por los artículos 18 y 19 de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental;
+                                por lo cual, no podrán ser difundidos en forma alguna y deberá evitarse cualquier manejo de los mismos que contravenga lo dispuesto en los artículos 20, 21 y 24 de la citada ley, y en
+                                caso de incumplimiento será sancionado conforme a lo establecido en la propia ley y en la normatividad institucional vigente. 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <!--<button type="reset">Enviar</button>-->
+        </div>
+    </form>
+</body>
+</html>

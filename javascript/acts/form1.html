@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2920.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8" />
+    <title>Formulario</title>
+</head>
+<body>
+    <p><font color="black" face="Comic Sans MS" size="+3">Datos de Contacto</font></p>
+    <form action="">
+        <table width="90%">
+            <tr>
+                <td><strong>Nombre</strong></td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td><strong>Apellido Paterno</strong></td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td><strong>Apellido Materno</strong></td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td><strong>Numero</strong></td>
+                <td><input type="tel"/></td>
+            </tr>
+            <tr>
+                <td><strong>Email</strong></td>
+                <td><input type="email"/></td>
+            </tr>
+            <tr>
+                <td><strong>Unidad Academica</strong></td>
+                <td><select>
+                    <optgroup>
+                        <option>ESCOM</option>
+                        <option>Otra</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <td><strong>Comentarios</strong></td>
+                <td><textarea rows="10" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Enviar</button></td>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>

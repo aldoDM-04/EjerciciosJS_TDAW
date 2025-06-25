@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2920.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Secciones</title>
+    <style>
+        hr {
+            width: 80%;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="assets\bootstrap-5.3.3\dist\css\bootstrap.min.css">
+</head>
+<body>
+    <br>
+    <div style="text-align: center;"><h1>Ejercicios de JavaScript</h1></div>
+    <hr class="mt-4 mb-3" style="height: 6px; width: 70%; background-color: rgb(252, 84, 0); margin: auto;"><br>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio1">
+            Ejercicio 1: Mayor de Tres
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio2">
+            Ejercicio 2: Pares entre 1 y 100
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio3">
+            Ejercicio 3: Suma del 1 al 100
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio4">
+            Ejercicio 4: Ordenamiento por Inserción
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio5">
+            Ejercicio 5: Ordenamiento por Selección
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio6">
+            Ejercicio 6: Ordenamiento por Burbuja
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio7">
+            Ejercicio 7: ¿Es par?
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio8">
+            Ejercicio 8: Tabla de Multiplicar
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio9">
+            Ejercicio 9: Calcula un Producto
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio10">
+            Ejercicio 10: Encuentra la Posición del Mayor
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio11">
+            Ejercicio 11: Suma de Vectores
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio12">
+            Ejercicio 12: Calcula la Media
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio13">
+            Ejercicio 13: Muestra los Numeros
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ejercicio14">
+            Ejercicio 14: Procesa Secuencia de Cadenas
+        </button>
+    </div>
+    <br>
+    <div>
+        <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Regresar</button>
+    </div>
+    <br>
+
+    <div class="modal fade" id="Ejercicio1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Calcula el Mayor de Tres Números</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="numero1">Primer número:</label>
+                    <input type="text" class="form-control"  id="numero1"><br>
+                    
+                    <label class="form-label" for="numero2">Segundo número:</label>
+                    <input type="text" class="form-control" id="numero2"><br>
+                    
+                    <label class="form-label" for="numero3">Tercer número:</label>
+                    <input type="text" class="form-control" id="numero3"><br>
+                    
+                    <button type="button" class="btn btn-primary" onclick="calcularMayor()" style="margin: auto;">Calcular Mayor</button><br><br>
+            
+                    <div id="resultado"></div>
+                    
+                    <script src="javascript\mayorDeTres.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Obtener los Números Pares entre 1 y 100</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="obtenerNumerosPares()">Obtener Números Pares</button><br><br>
+        
+                    <div id="resultado2"></div>
+            
+                    <script src="javascript\pares.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Calcula la suma de los Primeros 100 Números</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="calcularSuma()">Calcular Suma</button><br><br>
+    
+                    <div id="resultado3"></div>
+            
+                    <script src="javascript\sumaDe100.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Ordenamiento por Inserción</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaIns">Ingrese los numeros separados por comas:</label>
+                    <input type="text" class="form-control"  id="secuenciaIns"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="ordenamientoPorInsercion()">Ordenar</button><br><br>
+                    
+                    <div id="resultado4"></div>
+            
+                    <script src="javascript\OrdIns.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Ordenamiento por Selección</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaIns">Ingrese los numeros separados por comas:</label>
+                    <input type="text" class="form-control"  id="secuenciaSel"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="ordenamientoPorSeleccion()">Ordenar</button><br><br>
+                
+                    <div id="resultado5"></div>
+            
+                    <script src="javascript\OrdSel.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Ordenamiento por Burbuja</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaIns">Ingrese los numeros separados por comas:</label>
+                    <input type="text" class="form-control"  id="secuenciaBur"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="ordenamientoDeBurbuja()">Ordenar</button><br><br>
+                    
+                    <div id="resultado6"></div>
+            
+                    <script src="javascript\ordBur.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="Ejercicio7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Verifica si X es un Numero Par</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="numero">Ingrese un número:</label>
+                    <input type="number" class="form-control"  id="numero7"><br><br>
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="verificarNumeroPar()">Verificar</button>
+                    <br><br>
+
+                    <div id="resultado7"></div>
+            
+                    <script src="javascript\xPar.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Muestra la Tabla de Multiplicar</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="numero">Ingrese un número:</label>
+                    <input type="number" class="form-control" id="numero8"><br><br>
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="mostrarTablaMultiplicar()">Mostrar Tabla</button><br><br>
+            
+                    <div id="resultado8" style="text-align: center;"></div>
+            
+                    <script src="javascript\tabla.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Calcula un Producto con Sumas</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="numero_9_1">Ingrese el primer número:</label>
+                    <input type="number" class="form-control" id="numero_9_1"><br><br>
+            
+                    <label class="form-label" for="numero_9_2">Ingrese el segundo número:</label>
+                    <input type="number" class="form-control" id="numero_9_2"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="calcularProducto()">Calcular Producto</button>
+            
+                    <div id="resultado9"></div>
+            
+                    <script src="javascript\prodSum.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Encuentra la Posición del Numero Mayor</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuencia10">Ingrese la secuencia de números separados por comas:</label>
+                    <input type="text" class="form-control" id="secuencia10"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="encontrarMayor()">Encontrar Mayor Valor</button>
+            
+                    <div id="resultado10"></div>
+            
+                    <script src="javascript\pos.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+    <div class="modal fade" id="Ejercicio11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Suma de Vectores</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="vectorA">Ingrese los elementos del vector A separados por comas:</label>
+                    <input type="text" class="form-control" id="vectorA"><br><br>
+            
+                    <label class="form-label" for="vectorB">Ingrese los elementos del vector B separados por comas:</label>
+                    <input type="text" class="form-control" id="vectorB"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="sumarVectores()">Sumar Vectores</button>
+            
+                    <div id="resultado11"></div>
+            
+                    <script src="javascript\vec.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Calcula la Media</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaM">Ingrese la secuencia de números separados por comas:</label>
+                    <input type="text" class="form-control" id="secuenciaM"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="calcularMedia()">Calcular Media</button>
+            
+                    <div id="resultado12"></div>
+            
+                    <script src="javascript\media.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Muestra los Numeros</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaOrd">Ingrese la secuencia de números separados por comas:</label>
+                    <input type="text" class="form-control" id="secuenciaOrd"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="mostrarNumeros()">Mostrar Números</button>
+            
+                    <div id="resultado13"></div>
+            
+                    <script src="javascript\ord.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Ejercicio14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-center">
+                    <h1 class="modal-title fs-5" id="encabezadoEj1">Procesa Secuencia de Cadenas</h1>
+                  </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <label class="form-label" for="secuenciaC">Ingrese la secuencia de textos separados por comas:</label>
+                    <input type="text" class="form-control" id="secuenciaC"><br><br>
+            
+                    <button type="button" class="btn btn-primary" style="margin: auto;" onclick="analizarTextos()">Analizar Textos</button>
+            
+                    <div id="resultado14"></div>
+            
+                    <script src="javascript\cad.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Inicio</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="assets\bootstrap-5.3.3\dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>

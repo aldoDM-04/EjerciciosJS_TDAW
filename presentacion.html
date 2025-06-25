@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2920.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" href="assets\bootstrap-5.3.3\dist\css\bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .jumbotron {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            color: white;
+        }
+        .section-title {
+            margin-top: 30px;
+        }
+        .section {
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Mi Presentación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#peliculas">Películas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#musica">Música</a></li>
+                <li class="nav-item"><a class="nav-link" href="#platillos">Platillos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#libros">Libros</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Página Principal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Página de Presentación</h1>
+        <p class="lead">Hobbies, películas favoritas, música que me gusta, platillos favoritos y libros que me parecen interesantes.</p>
+    </header>
+
+    <!-- Sección Hobbies -->
+    <section id="hobbies" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Hobbies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets\img\pres\piano.jpg" class="img-fluid" alt="Hobby">
+                    <h3>Tocar el Teclado</h3>
+                    <p>Me gusta mucho tocar el teclado en mis ratos libres, es mi pasatiempo favorito y una actividad que me relaja y que disfruto mucho.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets\img\pres\gdl.jpg" class="img-fluid" alt="Hobby">
+                    <h3>Viajar</h3>
+                    <p>Me encanta explorar nuevos lugares, viajar y probar comidas nuevas.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets\img\pres\music.png" class="img-fluid" alt="Hobby"  style="width: 400px; height: 277px; object-fit: cover;">
+                    <h3>Escuchar Música</h3>
+                    <p>Escuchar música también es algo que me gusta mucho. Escucho diversos géneros y de varios compositores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Películas -->
+    <section id="peliculas" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Películas</h2>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="assets\img\pres\a.jpeg" class="img-fluid" alt="Películas" style="width: 250px; height: 300px; object-fit: cover;">
+                </div>
+                <div class="col-md-6">
+                    <h3>Películas Favoritas</h3>
+                    <ul>
+                        <li>Star Wars</li>
+                        <li>Interstellar</li>
+                        <li>Misión Imposible</li>
+                        <li>The Matrix</li>
+                        <li>Avengers</li>
+                        <li>Knives Out</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#peliculasModal">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Películas -->
+    <div class="modal fade" id="peliculasModal" tabindex="-1" role="dialog" aria-labelledby="peliculasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="peliculasModalLabel">Más Películas Favoritas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Knives Out 2: Glass Onion</li>
+                        <li>Transformers</li>
+                        <li>Terremoto</li>
+                        <li>Godzilla</li>
+                        <li>Top Gun</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Música -->
+    <section id="musica" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Música</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Géneros Favoritos</h3>
+                    <p>Me gustan muchos géneros, pero la música que más me gusta es la clásica e instrumental (soundtracks de películas).</p>
+                    <ul>
+                        <li>Clásica</li>
+                        <li>Instrumental</li>
+                        <li>Pop</li>
+                        <li>Regional</li>
+                        <li>Pop Rock</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets\img\pres\clasica.jpg" class="img-fluid" alt="Música"  style="width: 500px; height: 280px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Platillos -->
+    <section id="platillos" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Platillos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets\img\pres\taco.jpg" class="img-fluid" alt="Platillo">
+                    <h3>Tacos</h3>
+                    <p>Los tacos son la comida que más me gusta por su sabor y gran variedad.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets\img\pres\pi.jpg" class="img-fluid" alt="Platillo">
+                    <h3>Pizza</h3>
+                    <p>La pizza es una de mis comidas favoritas.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets\img\pres\sp.jpg" class="img-fluid" alt="Platillo">
+                    <h3>Pasta</h3>
+                    <p>El espaguetti también es una de mis comidas favoritas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Libros -->
+    <section id="libros" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Libros</h2>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="assets\img\pres\lib.jpg" class="img-fluid" alt="Libros" style="width: 240px; height: 330px; object-fit:fill;">
+                </div>
+                <div class="col-md-6">
+                    <h3>Libros Favoritos</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Breves Respuestas a las Grandes Preguntas</td>
+                                <td>Stephen Hawking</td>
+                            </tr>
+                            <tr>
+                                <td>Un clavado al cerebro</td>
+                                <td>Eduardo Calixto</td>
+                            </tr>
+                            <tr>
+                                <td>El GRan Diseño</td>
+                                <td>Stephen Hawking</td>
+                            </tr>
+                            <tr>
+                                <td>Harry Potter</td>
+                                <td>J.K. Rowling</td>
+                            </tr>
+                            <tr>
+                                <td>Lord of the Rings</td>
+                                <td>J.R.R. Tolkien</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Presentación</p>
+    </footer>
+
+    <script src="assets\bootstrap-5.3.3\dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>
